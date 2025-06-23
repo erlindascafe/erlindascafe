@@ -1,0 +1,26 @@
+# render.yaml
+
+services:
+  - type: web
+    name: laravel-tidb
+    env: docker
+    plan: free
+    envVars:
+      - key: APP_KEY
+        sync: false
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: DB_CONNECTION
+        value: mysql
+      - key: DB_HOST
+        value: YOUR_TIDB_HOST
+      - key: DB_PORT
+        value: 4000
+      - key: DB_DATABASE
+        value: YOUR_DATABASE
+      - key: DB_USERNAME
+        value: root
+      - key: DB_PASSWORD
+        sync: false
