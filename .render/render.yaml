@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: erlindascafe
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
